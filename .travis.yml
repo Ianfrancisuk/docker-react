@@ -9,4 +9,4 @@ before_install:
     - docker build -t francisuk/docker-react -f Dockerfile.dev .
 
 script:
-    - docker run francisuk/docker-react npm run test
+    - docker run francisuk/docker-react npm run test -- --coverage --watchAll=false
